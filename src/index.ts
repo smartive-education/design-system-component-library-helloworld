@@ -1,1 +1,1 @@
-export * from './components/atoms/index';
+export * from './design-tokens/index';
