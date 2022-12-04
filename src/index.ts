@@ -1,1 +1,1 @@
-export * from './components/test/test';
+export * from './components/atoms/index';
