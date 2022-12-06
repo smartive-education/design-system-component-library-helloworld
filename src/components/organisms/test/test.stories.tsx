@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Button, ButtonType } from './test';
 
 export default {
-    title: 'Design Systems/Organisms/Test Button',
+    title: 'Components/Organisms/Test Button',
     component: Button,
     argTypes: {
         type: {
