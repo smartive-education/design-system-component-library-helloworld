@@ -14,7 +14,8 @@
     }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "npm run build:types",
+    "build:types": "tsc -p ./tsconfig.json --declaration",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006",
     "storybook-windows": "set NODE_OPTIONS=\"--openssl-legacy-provider\" && start-storybook -p 6006"
