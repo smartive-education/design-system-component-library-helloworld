@@ -48,6 +48,10 @@ module.exports = {
       'none': '0',
       's': '8px'
     },
+    outlineWidth: {
+      '3': '3px',
+      '4': '4px',
+    },
     borderWidth: {
       '0': '0',
       '3': '3px'
