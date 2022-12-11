@@ -6,15 +6,26 @@ export default {
     component: Button,
     argTypes: {
         type: {
-            options: ['primary', 'secondary'],
+            options: ['default', 'purple'],
             control: { type: 'select' },
         },
     },
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args}>Hello World</Button>;
+const Template: ComponentStory<typeof Button> = (args) => (<Button {...args}>Button Label</Button>);
 
-export const ButtonComponent = Template.bind({});
-ButtonComponent.args = {
-    type: ButtonType.primary,
+export const DefaultButtonComponent = Template.bind({});
+DefaultButtonComponent.args = {
+    type: ButtonType.default,
+};
+
+export const PurpleButtonComponent = Template.bind({});
+PurpleButtonComponent.args = {
+    type: ButtonType.purple,
+};
+
+
+export const ColorButtonComponent = Template.bind({});
+ColorButtonComponent.args = {
+    type: ButtonType.colorful,
 };

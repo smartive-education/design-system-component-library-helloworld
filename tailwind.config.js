@@ -32,7 +32,8 @@ module.exports = {
       'slate-300': '#CBD5E1',
       'slate-200': '#E2E8F0',
       'slate-100': '#F1F5F9',
-      'slate-50': '#F8FAFC'
+      'slate-50': '#F8FAFC',
+      'white': '#FFFFFF'
     },
     spacing: {
       'xxs': '4px',
@@ -43,6 +44,21 @@ module.exports = {
       'xl': '48px',
       'xxl': '64px'
     },
-    extend: {}
+    borderRadius: {
+      'none': '0',
+      's': '8px'
+    },
+    borderWidth: {
+      '0': '0',
+      '3': '3px'
+    },
+    extend: {
+      width: {
+        '150': '150px'
+      },
+      height: {
+        '40': '40px'
+      }
+    }
   }
 }
