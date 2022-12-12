@@ -1,5 +1,5 @@
-import React from 'react';
-import  { FC, ReactNode } from 'react';
+import React, {FC, ReactNode} from 'react';
+import {Icon, IconType} from '../icon/icon';
 
 export enum ButtonType {
     default = 'default',
@@ -29,7 +29,7 @@ export const Button: FC<ButtonProps> = ({ type, size, children }) => {
    return <button
        className={
        `${defaultClasses} - ${ currentVariant } - ${ currentSize }`}
-      >{children}</button>
+      >{children}{<Icon type={IconType.Mumble}></Icon>}</button>
 };
 
 
