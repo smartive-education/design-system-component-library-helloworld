@@ -1,12 +1,12 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Button, ButtonType } from './test';
+import { Button, ButtonType } from './button';
 
 export default {
-    title: 'Components/Atoms/Test Button',
+    title: 'Components/Atoms/Button',
     component: Button,
     argTypes: {
         type: {
-            options: ['default', 'purple'],
+            options: ['default', 'purple', 'colorful'],
             control: { type: 'select' },
         },
     },
