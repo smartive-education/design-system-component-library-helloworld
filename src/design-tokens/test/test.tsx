@@ -1,5 +1,6 @@
 import React from 'react';
 import  { FC, ReactNode } from 'react';
+import { ReactComponent as Calendar } from './calendar.svg';
 
 export enum ButtonType {
     primary = 'primary',
@@ -12,5 +13,6 @@ export type ButtonProps = {
 };
 
 export const Button: FC<ButtonProps> = ({ type, children }) => (
-    <button className={type === ButtonType.primary ? 'bg-blue-500 text-white' : 'bg-blue-200 text-black'}>{children}</button>
+    // <button className={type === ButtonType.primary ? 'bg-blue-500 text-white' : 'bg-blue-200 text-black'}>{children}</button>
+    <Calendar></Calendar>
 );

@@ -16,10 +16,11 @@ export enum ButtonSize {
 export type ButtonProps = {
     type: ButtonType;
     size: ButtonSize;
-    children: ReactNode;
+    label: string;
+    // children: ReactNode;
 };
 
-export const Button: FC<ButtonProps> = ({ type, size, children }) => {
+const Button: FC<ButtonProps> = ({ type, size, label }) => {
     const defaultClasses = 'text-white py-xxs px-xs rounded-s outline hover:outline-3 active:outline-4';
     const defaultVariant =' bg-slate-600 hover:bg-slate-700 hover:outline-slate-100 active:outline-slate-200';
     const purpleVariant ='bg-violet-600 hover:bg-violet-700 hover:outline-violet-100 active:outline-violet-200';
@@ -29,7 +30,8 @@ export const Button: FC<ButtonProps> = ({ type, size, children }) => {
    return <button
        className={
        `${defaultClasses} - ${ currentVariant } - ${ currentSize }`}
-      >{children}{<Icon type={IconType.Mumble}></Icon>}</button>
+      >{label}{<Icon type={IconType.Mumble}></Icon>}</button>
 };
 
+export default Button;
 

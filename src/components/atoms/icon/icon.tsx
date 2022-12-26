@@ -12,7 +12,7 @@ export type IconProps = {
 
 export const Icon: FC<IconProps> = ({ type }) => {
    const icon: string = require(`../../../../public/icons/${ type }.svg`);
-   return  <img src={icon} alt="logo" />
+   return  <img src={icon} alt="logo" className={"bg-slate-50"} />
 };
 
 
