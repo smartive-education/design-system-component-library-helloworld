@@ -58,10 +58,12 @@ module.exports = {
     },
     extend: {
       width: {
+        '16': '16px',
         '150': '150px',
         '178': '178px'
       },
       height: {
+        '16': '16px',
         '48': '48px'
       }
     }

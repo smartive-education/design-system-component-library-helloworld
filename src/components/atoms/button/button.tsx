@@ -1,5 +1,5 @@
-import React, {FC, ReactNode} from 'react';
-import {Icon, IconType} from '../icon/icon';
+import React, {FC} from 'react';
+import MumbleIconSvGComponent from '../icon/mumble-icon';
 
 export enum ButtonType {
     default = 'default',
@@ -17,7 +17,6 @@ export type ButtonProps = {
     type: ButtonType;
     size: ButtonSize;
     label: string;
-    // children: ReactNode;
 };
 
 const Button: FC<ButtonProps> = ({ type, size, label }) => {
@@ -30,7 +29,7 @@ const Button: FC<ButtonProps> = ({ type, size, label }) => {
    return <button
        className={
        `${defaultClasses} - ${ currentVariant } - ${ currentSize }`}
-      >{label}{<Icon type={IconType.Mumble}></Icon>}</button>
+   ><div className={'flex items-center justify-between'}>{label}<MumbleIconSvGComponent className={'fill-white'} /></div></button>
 };
 
 export default Button;
