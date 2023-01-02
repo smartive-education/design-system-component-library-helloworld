@@ -29,7 +29,7 @@ const Button: FC<ButtonProps> = ({ type, size, label }) => {
    return <button
        className={
        `${defaultClasses} - ${ currentVariant } - ${ currentSize }`}
-   ><div className={'flex items-center justify-between'}>{label}<MumbleIconSvGComponent className={'fill-white'} /></div></button>
+   ><div className={'flex items-center justify-between'} >{label}<MumbleIconSvGComponent className={'fill-white'} /></div></button>
 };
 
 export default Button;

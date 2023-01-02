@@ -46,9 +46,11 @@ module.exports = {
     },
     borderRadius: {
       'none': '0',
-      's': '8px'
+      's': '8px',
+      'full': '9999px'
     },
     outlineWidth: {
+      'none': '0px',
       '3': '3px',
       '4': '4px',
     },
@@ -57,8 +59,12 @@ module.exports = {
       '3': '3px'
     },
     extend: {
+      backgroundImage: {
+        'bli': 'linear-gradient(to top, var(var(--tw-gradient-from) 30%, currentcolor, var(--tw-gradient-to) 70%))'
+      },
       width: {
         '16': '16px',
+        '48': '48px',
         '150': '150px',
         '178': '178px'
       },
