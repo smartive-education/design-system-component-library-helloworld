@@ -3,7 +3,7 @@ import React from 'react';
 import LikeButtonWithReaction from './like-button-with-reaction';
 
 export default {
-    title: 'Components/Atoms/LikeButtonWithReactionComponent',
+    title: 'Components/Atoms/Interaction Buttons/Like Button',
     component: LikeButtonWithReaction
 } as ComponentMeta<typeof LikeButtonWithReaction>;
 
