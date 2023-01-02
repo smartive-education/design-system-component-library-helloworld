@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import LikeButton from '../like-button/like-button';
+import InteractionButton from '../interaction-button/interaction-button';
 
 export type LikeWithReactionProps = {
     active: boolean;
@@ -14,6 +14,7 @@ export type LikeWithReactionProps = {
 };
 
 const LikeButtonWithReaction: FC<LikeWithReactionProps> = ({  label, likes, reactionByCurrentUser }) => {
+    let active = reactionByCurrentUser || likes > 0;
     let theLabel = '';
 
     if (reactionByCurrentUser) {
@@ -26,7 +27,7 @@ const LikeButtonWithReaction: FC<LikeWithReactionProps> = ({  label, likes, reac
         theLabel = likes + ' ' + label.severalReaction;
     }
 
-   return <LikeButton active={true} label={theLabel}></LikeButton>
+   return <InteractionButton active={active} label={theLabel} type={'like'} classes={ active ? 'text-pink-900 hover:bg-pink-50' : 'hover:text-pink-600 hover:bg-pink-50'} iconColor={active ? 'fill-pink-500' : 'fill-slate-600 hover:fill-pink-500'}></InteractionButton>
 };
 
 export default LikeButtonWithReaction;

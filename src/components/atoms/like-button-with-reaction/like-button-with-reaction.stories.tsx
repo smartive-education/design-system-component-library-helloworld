@@ -9,6 +9,12 @@ export default {
 
 const Template: ComponentStory<typeof LikeButtonWithReaction> = (args) => <LikeButtonWithReaction {...args}/>;
 
+export const NoLike = Template.bind({});
+NoLike.args = {
+    label: {noReaction: 'Like', oneReaction: 'Like', reactionByCurrentUser: 'Liked', severalReaction: 'Likes'},
+    likes: 0
+};
+
 export const OneLike = Template.bind({});
 OneLike.args = {
     label: {noReaction: 'Like', oneReaction: 'Like', reactionByCurrentUser: 'Liked', severalReaction: 'Likes'},

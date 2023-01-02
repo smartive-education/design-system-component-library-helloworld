@@ -1,9 +1,9 @@
 import {ComponentMeta, ComponentStory} from '@storybook/react';
 import React from 'react';
-import LikeButton from './like-button';
+import LikeButton from './interaction-button';
 
 export default {
-    title: 'Components/Atoms/LikeButton',
+    title: 'Components/Atoms/Interaction Button',
     component: LikeButton
 } as ComponentMeta<typeof LikeButton>;
 
