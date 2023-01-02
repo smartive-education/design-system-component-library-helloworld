@@ -4,10 +4,7 @@ import {HeartIconFilledComponent} from '../icons/index';
 
 export type LikeButtonProps = {
     active: boolean;
-    label: {
-        default: string;
-        activated: string;
-    }
+    label: string;
 };
 
 const LikeButton: FC<LikeButtonProps> = ({  active, label }) => {
@@ -15,14 +12,14 @@ const LikeButton: FC<LikeButtonProps> = ({  active, label }) => {
     if(active) {
        icon =  <HeartIconFilledComponent className={'fill-pink-500'} />
     } else {
-       icon = <HeartIconSvGComponent className={'fill-slate-600'}/>
+       icon = <HeartIconSvGComponent className={'fill-slate-600 hover:fill-pink-500'}/>
     }
 
     let defaultClasses = 'flex space-x-xs items-center text-slate-600 hover:text-pink-600 hover:bg-pink-50 px-xs py-xxs rounded-m'
     let activated = active ? 'text-pink-900' : 'text-slate-600'
 
    return <button className=    {
-       `${defaultClasses} - ${ activated }`}>{icon}<span>{active ? label.activated : label.default}</span></button>
+       `${defaultClasses} - ${ activated }`}>{icon}<span>{label}</span></button>
 };
 
 export default LikeButton;
