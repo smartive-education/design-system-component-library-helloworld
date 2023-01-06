@@ -43,14 +43,17 @@ module.exports = {
         900: '#4C1D95'
       }
     },
-    spacing: {
-      'xxs': '4px',
-      'xs': '8px',
-      's': '16px',
-      'm': '24px',
-      'l': '32px',
-      'xl': '48px',
-      'xxl': '64px'
+    fontSize: {
+      h1: ['48px'],
+      h2: ['40px'],
+      h3: ['32px'],
+      h4: ['24px'],
+      pL: ['24px'],
+      pM: ['18px'],
+      lXL: ['24px'],
+      lL:['20px'],
+      lM: ['16px'],
+      lS: ['14px']
     },
     extend: {}
   }
