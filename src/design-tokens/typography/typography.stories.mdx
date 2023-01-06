@@ -3,14 +3,9 @@ import resolveConfig from "tailwindcss/resolveConfig";
 import tailwindConfig from "../../../tailwind.config.js";
 const fullConfig = resolveConfig(tailwindConfig);
 
-[//]: # (import url&#40;'https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap'&#41;;)
-
 <Meta title="Design Tokens/Typography" />
 
 export const typoFont = {
-    type: {
-        fontFamily: '"Poppins", "sans-serif"'
-    },
     weight: {
         regular: '500',
         bold: '600',
@@ -22,7 +17,7 @@ export const HeaderText = 'Ueberschrift';
 export const SampleText = 'Quia aut et aut. Sunt et eligendi similique enim qui quo minus. Aut aut error velit voluptatum optio sed quis cumque error magni.';
 export const LabelText = 'Label'
 
-<Typeset fontSizes={fullConfig.theme.fontSize.h1} fontWeight={typoFont.weight.extrabold} sampleText={'H1: ' + HeaderText} fontFamily={typoFont.type.fontFamily}/>
+<Typeset fontSizes={fullConfig.theme.fontSize.h1} fontWeight={typoFont.weight.extrabold} sampleText={'H1: ' + HeaderText}/>
 <Typeset fontSizes={fullConfig.theme.fontSize.h2} fontWeight={typoFont.weight.extrabold} sampleText={'H2: ' + HeaderText}/>
 <Typeset fontSizes={fullConfig.theme.fontSize.h1} fontWeight={typoFont.weight.bold} sampleText={'H3: ' + HeaderText}/>
 <Typeset fontSizes={fullConfig.theme.fontSize.h1} fontWeight={typoFont.weight.bold} sampleText={'H4: ' + HeaderText}/>

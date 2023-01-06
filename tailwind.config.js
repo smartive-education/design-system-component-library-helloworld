@@ -43,6 +43,9 @@ module.exports = {
         900: '#4C1D95'
       }
     },
+    fontFamily: {
+      sans: ['Poppins', 'sans-serif'] // override default tailwind with poppins
+    },
     fontSize: {
       h1: ['48px'],
       h2: ['40px'],
