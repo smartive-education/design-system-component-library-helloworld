@@ -3,6 +3,7 @@ import HeartIconSvGComponent from '../icons/heart-icon/heart-icon';
 import {HeartIconFilledComponent} from '../icons/index';
 import MessageIconFilledSvGComponent from '../icons/message-icon-filled/message-icon-filled';
 import MessageIconSvGComponent from '../icons/message-icon/message-icon';
+import ShareIconSvGComponent from '../icons/share-icon';
 
 export type InteractionButtonProps = {
     active: boolean;
@@ -26,6 +27,8 @@ const InteractionButton: FC<InteractionButtonProps> = ({  active, label, type, c
         } else {
             icon = <MessageIconSvGComponent className={iconColor}/>
         }
+    } else if(type === 'copy') {
+        icon =  <ShareIconSvGComponent className={iconColor} />
     }
 
     let defaultClasses = 'flex space-x-xs items-center text-slate-600 px-xs py-xxs rounded-m'
