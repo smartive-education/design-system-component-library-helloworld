@@ -1,4 +1,5 @@
 import React, {FC} from 'react';
+import MumbleIconSvGComponent from '../../atoms/icon/mumble-icon';
 
 export type InputProps = {
     label: string;
@@ -7,11 +8,12 @@ export type InputProps = {
 };
 
 const Input: FC<InputProps> = ({  label,  placeholder, type ='text' }) => {
-
-
     return <div className={'block text-slate-700'}>
         <label>{label}</label>
-        <input type={type} placeholder={placeholder}  className={'flex items-center justify-between w-264 h-48 border-1 border-slate-100 hover:border-violet-600 focus:outline focus:outline-none focus:border-2 rounded-s px-s'}></input>
+        <div className={'w-264 h-48 relative'}>
+            <MumbleIconSvGComponent className="w-8 h-8 flex absolute right-s top-s bottom-s" />
+            <input type={type} placeholder={placeholder}  className={'flex items-center justify-between w-264 h-48 border-1 border-slate-100 hover:border-violet-600 focus:outline focus:outline-none focus:border-2 rounded-s px-s'}></input>
+        </div>
     </div>
 };
 
