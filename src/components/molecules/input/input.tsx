@@ -12,7 +12,7 @@ const Input: FC<InputProps> = ({  label,  placeholder, type ='text' }) => {
         <label>{label}</label>
         <div className={'w-264 h-48 relative'}>
             <MumbleIconSvGComponent className="w-8 h-8 flex absolute right-s top-s bottom-s" />
-            <input type={type} placeholder={placeholder}  className={'flex items-center justify-between w-264 h-48 border-1 border-slate-100 hover:border-violet-600 focus:outline focus:outline-none focus:border-2 rounded-s px-s'}></input>
+            <input type={type} placeholder={placeholder}  className={'w-264 h-48 border-1 border-slate-100 hover:border-violet-600 focus:outline focus:outline-none focus:border-2 rounded-s px-s'}></input>
         </div>
     </div>
 };
