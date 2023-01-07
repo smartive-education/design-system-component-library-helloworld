@@ -13,7 +13,9 @@ export type LikeWithReactionProps = {
 const CommentButton: FC<LikeWithReactionProps> = ({  label, numberOfComments }) => {
     let active = numberOfComments > 0;
 
-    return <InteractionButton label={active ? numberOfComments + ' ' + label.someComments : label.noComments} classes={ active ? 'text-slate-600 hover:bg-slate-100' : 'hover:text-slate-700 hover:bg-slate-100'}><MessageIconSvGComponent variant={active ? 'filled' : 'normal'} classes={active ? 'fill-violet-600' : 'fill-slate-600 hover:fill-violet-600'}/></InteractionButton>
+    return <InteractionButton label={active ? numberOfComments + ' ' + label.someComments : label.noComments} colorVariant={'violet'} active={active}>
+        <MessageIconSvGComponent variant={active ? 'filled' : 'normal'} classes={active ? 'fill-violet-600' : 'fill-slate-600 group-hover:fill-violet-600'}/>
+    </InteractionButton>
 };
 
 export default CommentButton;

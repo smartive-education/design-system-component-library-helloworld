@@ -11,7 +11,7 @@ export type CopyButtonProps = {
 };
 
 const CopyButton: FC<CopyButtonProps> = ({  label, active }) => {
-   return <InteractionButton label={active ? label.active : label.inactive} classes={ active ? 'text-slate-600 hover:bg-slate-100' : 'hover:text-slate-700 hover:bg-slate-100'}><ShareIconSvGComponent className={active ? 'fill-slate-700' : 'fill-slate-600 hover:fill-slate-700'} /></InteractionButton>
+   return <InteractionButton label={active ? label.active : label.inactive} colorVariant={'slate'} ><ShareIconSvGComponent className={active ? 'fill-slate-700' : 'fill-slate-600 group-hover:fill-slate-700'} /></InteractionButton>
 };
 
 export default CopyButton;

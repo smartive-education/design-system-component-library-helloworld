@@ -28,7 +28,7 @@ const LikeButtonWithReaction: FC<LikeWithReactionProps> = ({  label, likes, reac
         theLabel = likes + ' ' + label.severalReaction;
     }
 
-    return <InteractionButton label={theLabel} classes={ active ? 'text-pink-900 hover:bg-pink-50' : 'hover:text-pink-600 hover:bg-pink-50'}><HeartIconSvGComponent variant={active ? 'filled' : 'normal'}  classes={active ? 'fill-pink-500' : 'fill-slate-600 hover:fill-pink-500'}/></InteractionButton>
+    return <InteractionButton label={theLabel} colorVariant={'pink'} active={active}><HeartIconSvGComponent variant={active ? 'filled' : 'normal'}  classes={active ? 'fill-pink-500' : 'fill-slate-600 group-hover:fill-pink-500'}/></InteractionButton>
 };
 
 export default LikeButtonWithReaction;
