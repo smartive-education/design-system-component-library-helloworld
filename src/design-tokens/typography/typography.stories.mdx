@@ -5,30 +5,19 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 <Meta title="Design Tokens/Typography" />
 
-export const typoFont = {
-    weight: {
-        regular: '500',
-        bold: '600',
-        extrabold: '700'
-    },
-};
-
 export const HeaderText = 'Ueberschrift';
 export const SampleText = 'Quia aut et aut. Sunt et eligendi similique enim qui quo minus. Aut aut error velit voluptatum optio sed quis cumque error magni.';
 export const LabelText = 'Label'
 
-<Typeset fontSizes={fullConfig.theme.fontSize.h1} fontWeight={typoFont.weight.extrabold} sampleText={'H1: ' + HeaderText} fontFamily={fullConfig.theme.fontFamily.sans}/>
-<Typeset fontSizes={fullConfig.theme.fontSize.h2} fontWeight={typoFont.weight.extrabold} sampleText={'H2: ' + HeaderText} fontFamily={fullConfig.theme.fontFamily.sans}/>
-<Typeset fontSizes={fullConfig.theme.fontSize.h3} fontWeight={typoFont.weight.bold} sampleText={'H3: ' + HeaderText} fontFamily={fullConfig.theme.fontFamily.sans}/>
-<Typeset fontSizes={fullConfig.theme.fontSize.h4} fontWeight={typoFont.weight.bold} sampleText={'H4: ' + HeaderText} fontFamily={fullConfig.theme.fontFamily.sans}/>
+<Typeset fontSizes={fullConfig.theme.fontSize.l3} fontWeight={fullConfig.theme.fontWeight.bold} sampleText={'head-1: ' + HeaderText} fontFamily={fullConfig.theme.fontFamily.sans}/>
+<Typeset fontSizes={fullConfig.theme.fontSize.l2} fontWeight={fullConfig.theme.fontWeight.bold} sampleText={'head-2: ' + HeaderText} fontFamily={fullConfig.theme.fontFamily.sans}/>
+<Typeset fontSizes={fullConfig.theme.fontSize.l1} fontWeight={fullConfig.theme.fontWeight.semibold} sampleText={'head-3: ' + HeaderText} fontFamily={fullConfig.theme.fontFamily.sans}/>
+<Typeset fontSizes={fullConfig.theme.fontSize.m2} fontWeight={fullConfig.theme.fontWeight.semibold} sampleText={'head-4: ' + HeaderText} fontFamily={fullConfig.theme.fontFamily.sans}/>
 
-<Typeset fontSizes={fullConfig.theme.fontSize.pL} fontWeight={typoFont.weight.regular} sampleText={'pL: ' + SampleText} fontFamily={fullConfig.theme.fontFamily.sans}/>
-<Typeset fontSizes={fullConfig.theme.fontSize.pM} fontWeight={typoFont.weight.regular} sampleText={'pM: ' + SampleText} fontFamily={fullConfig.theme.fontFamily.sans}/>
+<Typeset fontSizes={fullConfig.theme.fontSize.m2} fontWeight={fullConfig.theme.fontWeight.medium} sampleText={'parapgraph-L: ' + SampleText} fontFamily={fullConfig.theme.fontFamily.sans}/>
+<Typeset fontSizes={fullConfig.theme.fontSize.s3} fontWeight={fullConfig.theme.fontWeight.medium} sampleText={'parapgraph-M: ' + SampleText} fontFamily={fullConfig.theme.fontFamily.sans}/>
 
-<Typeset fontSizes={fullConfig.theme.fontSize.lXL} fontWeight={typoFont.weight.bold} sampleText={'lXL: ' + LabelText} fontFamily={fullConfig.theme.fontFamily.sans}/>
-<Typeset fontSizes={fullConfig.theme.fontSize.lL} fontWeight={typoFont.weight.bold} sampleText={'lL: ' + LabelText} fontFamily={fullConfig.theme.fontFamily.sans}/>
-<Typeset fontSizes={fullConfig.theme.fontSize.lM} fontWeight={typoFont.weight.bold} sampleText={'lM: ' + LabelText} fontFamily={fullConfig.theme.fontFamily.sans}/>
-<Typeset fontSizes={fullConfig.theme.fontSize.lS} fontWeight={typoFont.weight.bold} sampleText={'lS: ' + LabelText} fontFamily={fullConfig.theme.fontFamily.sans}/>
-
-
-
+<Typeset fontSizes={fullConfig.theme.fontSize.m2} fontWeight={fullConfig.theme.fontWeight.semibold} sampleText={'label-XL: ' + LabelText} fontFamily={fullConfig.theme.fontFamily.sans}/>
+<Typeset fontSizes={fullConfig.theme.fontSize.m1} fontWeight={fullConfig.theme.fontWeight.semibold} sampleText={'label-L: ' + LabelText} fontFamily={fullConfig.theme.fontFamily.sans}/>
+<Typeset fontSizes={fullConfig.theme.fontSize.s2} fontWeight={fullConfig.theme.fontWeight.semibold} sampleText={'label-M: ' + LabelText} fontFamily={fullConfig.theme.fontFamily.sans}/>
+<Typeset fontSizes={fullConfig.theme.fontSize.s1} fontWeight={fullConfig.theme.fontWeight.semibold} sampleText={'label-S: ' + LabelText} fontFamily={fullConfig.theme.fontFamily.sans}/>
