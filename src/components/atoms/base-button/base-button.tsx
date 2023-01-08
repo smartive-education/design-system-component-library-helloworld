@@ -13,7 +13,8 @@ export type ButtonProps = {
 };
 
 const BaseButton: FC<ButtonProps> = ({ size, label, classes }) => {
-  const defaultClasses = 'text-white py-xxs px-xs rounded-s outline hover:outline-3 active:outline-4 relative';
+  const defaultClasses =
+    'text-white py-xxs px-xs rounded-s outline hover:outline-3 active:outline-4 relative';
   const currentSize = size === ButtonSize.m ? 'w-150 h-40' : 'w-178 h-48';
   return (
     <button className={`${defaultClasses} - ${classes} - ${currentSize}`}>
