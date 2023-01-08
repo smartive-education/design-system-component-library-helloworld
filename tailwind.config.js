@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./src/**/*.{js, jsx,ts,tsx}'],
@@ -44,7 +45,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ['Poppins', 'sans-serif'] // override default tailwind with poppins
+      sans: ["Poppins", ...defaultTheme.fontFamily.sans] // override default tailwind with poppins
     },
     fontSize: {
       h1: ['48px'],
