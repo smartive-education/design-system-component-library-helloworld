@@ -8,6 +8,7 @@ export type ProfilePicProps = {
 
 const ProfilePic: FC<ProfilePicProps> = ({  size, imageUrl }) => {
     const defaultClasses = 'object-fill bg-violet-200 rounded-full absolute'
+    const outlineClasses = 'outline outline-4 outline-slate-100'
     let sizeClasses;
     switch(size) {
         case 'S':
@@ -20,12 +21,18 @@ const ProfilePic: FC<ProfilePicProps> = ({  size, imageUrl }) => {
             sizeClasses = 'w-96 h-96';
             break;
         case 'XL':
-            sizeClasses = 'w-160 h-160';
+            sizeClasses = 'absolute w-160 h-160';
             break;
     }
 
     const image: string = require(`${ imageUrl }`);
-    return  <div className={'relative'}><div><img src={image} alt="logo" className={`${ defaultClasses } - ${ sizeClasses }`} /> <div className={size !== 'XL' ? 'invisible' : 'absolute right-s top-s bottom-s'}><IconButton label={'Edit'}/></div></div></div>
+    return  <div className={'relative'}>
+        <div className={size === 'XL' ? sizeClasses : ''}>
+            <img src={image} alt="Profile Picture"  className={`${ defaultClasses } - ${ sizeClasses } - ${ size !== 'S' ? outlineClasses : '' }`} />
+            <div className={size !== 'XL' ? 'invisible' : 'absolute right-none bottom-none'}>
+                <IconButton label={'Edit'} variant={'edit'}/></div>
+        </div>
+    </div>
 };
 
 export default ProfilePic;

@@ -36,6 +36,7 @@ module.exports = {
       'white': '#FFFFFF'
     },
     spacing: {
+      'none': '0px',
       'xxxxs': '2px',
       'xxxs': '3px',
       'xxs': '4px',
