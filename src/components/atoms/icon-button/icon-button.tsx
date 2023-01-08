@@ -1,14 +1,19 @@
 import React, { FC } from 'react';
 import MumbleIconSvGComponent from '../icon/mumble-icon';
-import {EditIconSvGComponent} from "../icons/index";
+import { EditIconSvGComponent } from '../icons/index';
 
 export type IconButtonProps = {
   label: string;
   variant: 'logo' | 'edit';
 };
 
-const IconButton: FC<IconButtonProps> = ({  label, variant }) => {
-    const icon = variant === 'logo' ? <MumbleIconSvGComponent className={'fill-white'} /> : <EditIconSvGComponent className={'fill-white'} />
+const IconButton: FC<IconButtonProps> = ({ label, variant }) => {
+  const icon =
+    variant === 'logo' ? (
+      <MumbleIconSvGComponent className={'fill-white'} />
+    ) : (
+      <EditIconSvGComponent className={'fill-white'} />
+    );
   return (
     <button
       className={

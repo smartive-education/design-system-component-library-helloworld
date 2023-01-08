@@ -11,6 +11,6 @@ const Template: ComponentStory<typeof IconButton> = (args) => <IconButton {...ar
 
 export const IconButtonComponent = Template.bind({});
 IconButtonComponent.args = {
-    label: 'Click me',
-    variant: "logo"
+  label: 'Click me',
+  variant: 'logo'
 };
