@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     colors: {
       transparent: 'transparent',
-      current: "currentColor",
-      pink : {
+      current: 'currentColor',
+      pink: {
         50: '#FDF2F8',
         100: '#FCE7F3',
         200: '#FBCFE8',
@@ -44,14 +44,14 @@ module.exports = {
       }
     },
     spacing: {
-      'xxs': '4px',
-      'xs': '8px',
-      's': '16px',
-      'm': '24px',
-      'l': '32px',
-      'xl': '48px',
-      'xxl': '64px'
+      xxs: '4px',
+      xs: '8px',
+      s: '16px',
+      m: '24px',
+      l: '32px',
+      xl: '48px',
+      xxl: '64px'
     },
     extend: {}
   }
-}
+};
