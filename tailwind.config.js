@@ -69,6 +69,8 @@ module.exports = {
     },
     borderWidth: {
       0: '0',
+      1: '1px',
+      2: '2px',
       3: '3px'
     },
     extend: {
@@ -82,7 +84,8 @@ module.exports = {
         96: '96px',
         150: '150px',
         160: '160px',
-        178: '178px'
+        178: '178px',
+        264: '264px'
       },
       height: {
         16: '16px',
