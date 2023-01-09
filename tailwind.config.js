@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
@@ -7,6 +9,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: "currentColor",
+      white: colors.white,
       pink : {
         50: '#FDF2F8',
         100: '#FCE7F3',
@@ -63,5 +66,8 @@ module.exports = {
       bold: '700',
     },
     extend: {}
-  }
+  },
+  plugins: [
+    require('@headlessui/tailwindcss')
+  ]
 }

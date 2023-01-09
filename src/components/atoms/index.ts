@@ -1,1 +1,1 @@
-export * from './test/test';
+export * from './tabGroup/tabGroup';

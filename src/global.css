@@ -26,7 +26,7 @@
     .paragraph-M {
         @apply font-sans font-medium text-s3 text-slate-600
     }
-    .labl-XL {
+    .label-XL {
         @apply font-sans font-semibold text-m2 text-slate-600
     }
     .label-L {
