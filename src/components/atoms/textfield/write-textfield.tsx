@@ -6,11 +6,11 @@ import {
   UserIconComponent
 } from '../icons/index';
 
-export type LabelProps = {
+export type WriteTextfieldProps = {
   placeholder: string;
 };
 
-const Textfield: FC<LabelProps> = ({ placeholder }) => {
+const WriteTextfield: FC<WriteTextfieldProps> = ({ placeholder }) => {
   return <textarea className={
     'bg-slate-100 h-160 w-355 border-1 hover:border-2 border-slate-200 ' +
     'hover:border-slate-300 rounded-s focus:outline focus:outline-none focus:border-2 ' +
@@ -18,4 +18,4 @@ const Textfield: FC<LabelProps> = ({ placeholder }) => {
   } placeholder={placeholder}></textarea>;
 };
 
-export default Textfield;
+export default WriteTextfield;

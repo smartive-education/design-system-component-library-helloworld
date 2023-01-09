@@ -5,5 +5,5 @@ export { default as PurpleButton } from './purple-button';
 export { default as ColorfulButton } from './colorful-button';
 export { default as SvgComponent } from './icon';
 export { default as Label } from './label';
-export { default as Textfield } from './textfield';
+export { default as WriteTextfield } from './textfield';
 export * from './icon/icon';
