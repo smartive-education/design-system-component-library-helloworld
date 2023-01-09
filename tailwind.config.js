@@ -41,7 +41,8 @@ module.exports = {
         700: '#6D28D9',
         800: '#5B21B6',
         900: '#4C1D95'
-      }
+      },
+      white: '#FFFFFF'
     },
     spacing: {
       xxs: '4px',
@@ -52,6 +53,32 @@ module.exports = {
       xl: '48px',
       xxl: '64px'
     },
-    extend: {}
+    borderRadius: {
+      none: '0',
+      s: '8px',
+      m: '16px',
+      full: '9999px'
+    },
+    outlineWidth: {
+      none: '0px',
+      3: '3px',
+      4: '4px'
+    },
+    borderWidth: {
+      0: '0',
+      3: '3px'
+    },
+    extend: {
+      width: {
+        16: '16px',
+        48: '48px',
+        150: '150px',
+        178: '178px'
+      },
+      height: {
+        16: '16px',
+        48: '48px'
+      }
+    }
   }
 };
