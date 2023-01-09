@@ -12,20 +12,24 @@ const Template: ComponentStory<typeof ProfilePic> = (args) => <ProfilePic {...ar
 export const Small = Template.bind({});
 Small.args = {
   size: 'S',
-  imageUrl: './Profile.svg'
+  imageUrl: './Profile.svg',
+  editLabel: 'Bearbeiten'
 };
 export const Medium = Template.bind({});
 Medium.args = {
   size: 'M',
-  imageUrl: './Profile.svg'
+  imageUrl: './Profile.svg',
+  editLabel: 'Bearbeiten'
 };
 export const Large = Template.bind({});
 Large.args = {
   size: 'L',
-  imageUrl: './Profile.svg'
+  imageUrl: './Profile.svg',
+  editLabel: 'Bearbeiten'
 };
 export const XLarge = Template.bind({});
 XLarge.args = {
   size: 'XL',
-  imageUrl: './Profile.svg'
+  imageUrl: './Profile.svg',
+  editLabel: 'Bearbeiten'
 };
