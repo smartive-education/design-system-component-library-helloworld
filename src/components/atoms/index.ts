@@ -1,4 +1,3 @@
-export { default as Button } from './button';
 export { default as IconButton } from './icon-button';
 export { default as DefaultButton } from './default-button';
 export { default as PurpleButton } from './purple-button';
