@@ -31,5 +31,6 @@ export const XLarge = Template.bind({});
 XLarge.args = {
   size: 'XL',
   imageUrl: './Profile.svg',
-  editLabel: 'Bearbeiten'
+  editLabel: 'Bearbeiten',
+  onClick: () => console.log('Edit button pressed.')
 };

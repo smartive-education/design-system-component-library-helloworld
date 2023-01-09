@@ -4,7 +4,7 @@ import { EditIconSvGComponent } from '../icons/index';
 
 export type IconButtonProps = {
   label: string;
-  onClick: React.MouseEventHandler<HTMLButtonElement>;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
   variant: 'logo' | 'edit';
 };
 

@@ -3,11 +3,12 @@ import IconButton from '../icon-button/icon-button';
 
 export type ProfilePicProps = {
   size?: 'S' | 'M' | 'L' | 'XL';
-  imageUrl: string;
+  imageUrl?: string;
   editLabel: string;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
-const ProfilePic: FC<ProfilePicProps> = ({ size, imageUrl, editLabel }) => {
+const ProfilePic: FC<ProfilePicProps> = ({ size, imageUrl, editLabel, onClick }) => {
   const defaultClasses = 'object-fill bg-violet-200 rounded-full absolute';
   const outlineClasses = 'outline outline-4 outline-slate-100';
   const imgClasses = 'absolute w-full h-full';
@@ -37,7 +38,7 @@ const ProfilePic: FC<ProfilePicProps> = ({ size, imageUrl, editLabel }) => {
           className={`${defaultClasses} - ${imgClasses} - ${size !== 'S' ? outlineClasses : ''}`}
         />
         <div className={size !== 'XL' ? 'invisible' : 'absolute right-none bottom-none'}>
-          <IconButton label={editLabel} variant={'edit'} />
+          <IconButton label={editLabel} variant={'edit'} onClick={onClick} />
         </div>
       </div>
     </div>
